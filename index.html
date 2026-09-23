@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ninth Bit Studio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Public+Sans:wght@400;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #221b12;
+    --ink-soft: #5a5140;
+    --paper: #fbf8f2;
+    --paper-alt: #f1ebdd;
+    --gold: #9c6c17;
+    --rule: #ded2b4;
+    color-scheme: light dark;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --ink: #f3ecdd;
+      --ink-soft: #c9bc9c;
+      --paper: #16130c;
+      --paper-alt: #241e13;
+      --gold: #d9ae55;
+      --rule: #3a311f;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: "Public Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+    font-size: 16px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  .page { max-width: 640px; margin: 0 auto; padding: 72px 24px 96px; }
+  .studio {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 12.5px; letter-spacing: 0.12em;
+    text-transform: uppercase; color: var(--ink-soft);
+    margin: 0 0 40px;
+  }
+  h1 {
+    font-family: "Fraunces", Georgia, serif;
+    font-weight: 600;
+    font-size: clamp(2rem, 6vw, 2.8rem);
+    line-height: 1.1; margin: 0 0 12px;
+  }
+  .tagline { color: var(--ink-soft); margin: 0 0 40px; max-width: 46ch; }
+  .card {
+    display: flex; gap: 18px; align-items: flex-start;
+    background: var(--paper-alt); border: 1px solid var(--rule);
+    border-radius: 6px; padding: 24px; margin-bottom: 20px;
+  }
+  .card svg { width: 46px; height: 46px; flex-shrink: 0; }
+  .card h2 {
+    font-family: "Fraunces", Georgia, serif;
+    font-size: 1.3rem; margin: 0 0 6px; font-weight: 600;
+  }
+  .card p { margin: 0 0 10px; color: var(--ink-soft); }
+  a { color: var(--gold); text-underline-offset: 3px; }
+  a:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
+  footer {
+    margin-top: 56px; padding-top: 24px;
+    border-top: 1px solid var(--rule);
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 12px; color: var(--ink-soft); letter-spacing: 0.02em;
+  }
+  footer a { color: var(--ink-soft); }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <p class="studio">Ninth Bit Studio</p>
+
+  <h1>Small games, made carefully.</h1>
+  <p class="tagline">An independent studio building mobile games for Android.</p>
+
+  <div class="card">
+    <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path d="M9 13.5C8.3 6.8 12 3 16 3s7.7 3.8 7 10.5C23.7 20 20.8 26 16 27C11.2 26 8.3 20 9 13.5Z" fill="none" stroke="currentColor" stroke-width="1.6" style="color:var(--gold)"/>
+      <circle cx="16" cy="14" r="4" fill="none" stroke="currentColor" stroke-width="1.6" style="color:var(--gold)"/>
+    </svg>
+    <div>
+      <h2>LuckyPouch</h2>
+      <p>20 gold pouches, 20 hidden prizes, and a Head Jeweler who keeps calling with offers. Take the deal, or hold out for what's in your own pouch.</p>
+      <p>
+        <a href="https://play.google.com/store/apps/details?id=com.kese.altin">Get it on Google Play</a>
+        &nbsp;&middot;&nbsp;
+        <a href="/privacy.html">Privacy policy</a>
+      </p>
+    </div>
+  </div>
+
+  <footer>
+    Ninth Bit Studio &nbsp;&middot;&nbsp; <a href="mailto:ninthbitstudio@gmail.com">ninthbitstudio@gmail.com</a>
+  </footer>
+
+</div>
+</body>
+</html>

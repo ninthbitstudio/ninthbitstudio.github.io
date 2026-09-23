@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>LuckyPouch Privacy Policy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Public+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #221b12;
+    --ink-soft: #5a5140;
+    --paper: #fbf8f2;
+    --paper-alt: #f1ebdd;
+    --gold: #9c6c17;
+    --gold-soft: #b98a2c;
+    --rule: #ded2b4;
+    --tick-good: #3f7a4e;
+    --tick-bad: #a34632;
+    color-scheme: light dark;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --ink: #f3ecdd;
+      --ink-soft: #c9bc9c;
+      --paper: #16130c;
+      --paper-alt: #241e13;
+      --gold: #d9ae55;
+      --gold-soft: #c89b3c;
+      --rule: #3a311f;
+      --tick-good: #7fbb8d;
+      --tick-bad: #d98a70;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: "Public Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+    font-size: 16px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  .page { max-width: 700px; margin: 0 auto; padding: 64px 24px 96px; }
+  .mark { display: flex; align-items: center; gap: 10px; margin-bottom: 40px; }
+  .mark svg { width: 30px; height: 30px; flex-shrink: 0; }
+  .mark-text {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 12.5px; letter-spacing: 0.09em;
+    text-transform: uppercase; color: var(--ink-soft);
+  }
+  h1 {
+    font-family: "Fraunces", Georgia, serif;
+    font-weight: 600;
+    font-size: clamp(2rem, 5vw, 2.7rem);
+    line-height: 1.12; text-wrap: balance;
+    margin: 0 0 10px; color: var(--ink);
+  }
+  .subline {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 12.5px; letter-spacing: 0.06em;
+    color: var(--ink-soft); margin: 0 0 40px;
+  }
+  .subline b { color: var(--ink); font-weight: 500; }
+  .glance {
+    background: var(--paper-alt); border: 1px solid var(--rule);
+    border-radius: 4px; padding: 26px 28px; margin-bottom: 52px;
+  }
+  .glance-title {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 11px; letter-spacing: 0.12em;
+    text-transform: uppercase; color: var(--gold); margin: 0 0 16px;
+  }
+  .glance dl {
+    display: grid; grid-template-columns: 15px 1fr;
+    row-gap: 12px; column-gap: 12px; margin: 0;
+  }
+  .glance dt { grid-column: 1; padding-top: 2px; }
+  .glance dd { grid-column: 2; margin: 0; color: var(--ink); }
+  .glance dd b { font-weight: 600; }
+  .tick-good, .tick-bad {
+    display: inline-block; width: 15px; height: 15px;
+    border-radius: 50%; position: relative;
+  }
+  .tick-good { background: color-mix(in srgb, var(--tick-good) 22%, transparent); }
+  .tick-bad { background: color-mix(in srgb, var(--tick-bad) 20%, transparent); }
+  .tick-good::after, .tick-bad::after { content: ""; position: absolute; inset: 4px; border-radius: 50%; }
+  .tick-good::after { background: var(--tick-good); }
+  .tick-bad::after { background: var(--tick-bad); }
+  section { margin-bottom: 40px; }
+  h2 {
+    font-family: "Fraunces", Georgia, serif;
+    font-weight: 600; font-size: 1.32rem;
+    margin: 0 0 4px; padding-top: 18px;
+    border-top: 1px solid var(--rule); color: var(--ink);
+  }
+  h2 .num {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 12px; color: var(--gold);
+    letter-spacing: 0.04em; display: block; margin-bottom: 6px;
+  }
+  p { margin: 0 0 14px; max-width: 62ch; }
+  p:last-child { margin-bottom: 0; }
+  ul { margin: 0 0 14px; padding-left: 1.2em; max-width: 62ch; }
+  li { margin-bottom: 6px; }
+  li:last-child { margin-bottom: 0; }
+  a { color: var(--gold); text-decoration-color: color-mix(in srgb, var(--gold) 45%, transparent); text-underline-offset: 3px; }
+  a:hover { color: var(--gold-soft); }
+  a:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
+  strong { color: var(--ink); font-weight: 600; }
+  footer {
+    margin-top: 56px; padding-top: 24px;
+    border-top: 1px solid var(--rule);
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 12px; color: var(--ink-soft); letter-spacing: 0.02em;
+  }
+  footer a { color: var(--ink-soft); }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="mark">
+    <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path d="M9 13.5C8.3 6.8 12 3 16 3s7.7 3.8 7 10.5C23.7 20 20.8 26 16 27C11.2 26 8.3 20 9 13.5Z" fill="none" stroke="currentColor" stroke-width="1.6" style="color:var(--gold)"/>
+      <circle cx="16" cy="14" r="4" fill="none" stroke="currentColor" stroke-width="1.6" style="color:var(--gold)"/>
+    </svg>
+    <span class="mark-text">LuckyPouch &middot; Ninth Bit Studio</span>
+  </div>
+
+  <h1>Privacy Policy</h1>
+  <p class="subline">Effective <b>August 21, 2026</b> &nbsp;&middot;&nbsp; Applies to the LuckyPouch Android app (package <b>com.kese.altin</b>)</p>
+
+  <div class="glance">
+    <p class="glance-title">At a glance</p>
+    <dl>
+      <dt><span class="tick-good" aria-hidden="true"></span></dt>
+      <dd><b>We collect:</b> your Play Games display name and player ID when you sign in, the gold totals you submit to the weekly leaderboard, and an advertising ID when you watch a reward video ad.</dd>
+
+      <dt><span class="tick-bad" aria-hidden="true"></span></dt>
+      <dd><b>We don't collect:</b> your email address, phone number, precise location, photos, contacts, or any payment information &mdash; LuckyPouch has no real-money features.</dd>
+
+      <dt><span class="tick-good" aria-hidden="true"></span></dt>
+      <dd><b>We share with:</b> Google, through the Play Games Services and AdMob SDKs the app runs on &mdash; never with anyone else.</dd>
+    </dl>
+  </div>
+
+  <section>
+    <h2><span class="num">01</span>Who we are</h2>
+    <p>LuckyPouch is developed by <strong>Ninth Bit Studio</strong>. This policy explains what information the app collects, why, and how you can control it. If anything here is unclear, write to us at <a href="mailto:ninthbitstudio@gmail.com">ninthbitstudio@gmail.com</a>.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">02</span>Information we collect</h2>
+    <p>LuckyPouch has no accounts or servers of its own. Everything it collects passes through two Google services:</p>
+    <ul>
+      <li><strong>Google Play Games sign-in.</strong> When you tap "Join with Play Games," Google shares your public Play Games display name and player ID with the app, so you can play under your own name.</li>
+      <li><strong>Weekly leaderboard.</strong> The gold you win in a round is submitted, under your Play Games account, to a weekly leaderboard so you can see how you rank against other players.</li>
+      <li><strong>Rewarded ads.</strong> Watching a short video (to unlock an extra play or boost an offer) is handled by Google AdMob, which collects your device's advertising ID and related technical data to select and measure the ad.</li>
+      <li><strong>On-device only.</strong> How many times you've played today is stored locally on your device and is never sent anywhere. It's deleted the moment you uninstall the app.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2><span class="num">03</span>How we use it</h2>
+    <p>Strictly to run the game: to sign you in under your Play Games name, to record and display leaderboard standings, to enforce the daily play limit, and to show and measure the rewarded ads you choose to watch. We don't use your data for anything beyond that, and we don't build advertising profiles ourselves.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">04</span>Third-party services</h2>
+    <p>LuckyPouch is built on two Google SDKs, each governed by Google's own privacy terms:</p>
+    <ul>
+      <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Play Games Services</a> &mdash; sign-in, player profile, leaderboards, and the cloud save used to enforce daily play limits.</li>
+      <li><a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener">Google AdMob</a> &mdash; serves and measures the rewarded video ads.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2><span class="num">05</span>Data retention &amp; deletion</h2>
+    <p>Your leaderboard scores and Play Games profile are held by Google under your own Google account, not by us &mdash; we never see or store them ourselves. You're always in control:</p>
+    <ul>
+      <li><strong>Local data</strong> (today's play count) is wiped automatically when you uninstall LuckyPouch.</li>
+      <li><strong>Play Games data</strong> (your display name, leaderboard scores) can be managed or removed at any time from your <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">Google Account's connected apps &amp; services</a>, or by asking Google directly to delete your Play Games activity.</li>
+      <li><strong>Anything else</strong> &mdash; write to <a href="mailto:ninthbitstudio@gmail.com">ninthbitstudio@gmail.com</a> and we'll help you sort it out or pass the request on to Google where it applies.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2><span class="num">06</span>Children's privacy</h2>
+    <p>LuckyPouch is not directed at children under 13 and we don't knowingly collect information from them. The game involves no real-money gambling &mdash; pouches contain simulated gold prizes only.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">07</span>Changes to this policy</h2>
+    <p>If this policy changes, we'll update the effective date above. Continuing to use LuckyPouch after a change means you accept the update.</p>
+  </section>
+
+  <footer>
+    LuckyPouch &mdash; Ninth Bit Studio &nbsp;&middot;&nbsp; Contact: <a href="mailto:ninthbitstudio@gmail.com">ninthbitstudio@gmail.com</a>
+  </footer>
+
+</div>
+</body>
+</html>
